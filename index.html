@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Wellington Santos Ferreira</title>
+ 
+   <link rel="stylesheet" href="style.css">
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Wellington Santos Ferreira</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button class="toggle-theme" onclick="toggleTheme()">🌙 Modo</button>
+
+  </header>
+
+  <section class="hero">
+    <h2>Olá, eu sou Wellington Santos Ferreira</h2>
+    <p>Desenvolvedor Full-stack em formação. Apaixonado por tecnologia e inovação!</p>
+    <button class="btn" onclick="document.getElementById('projetos').scrollIntoView()">Ver Projetos</button>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou estudante de tecnologia com foco em desenvolvimento web. Estou sempre em busca de novos desafios para aplicar meus conhecimentos em HTML, CSS e JavaScript.</p>
+    <p>Tenho interesse por design responsivo, acessibilidade e experiências digitais que realmente entregam valor.</p>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades Técnicas</h2>
+    <ul class="skills">
+      <li>HTML5, CSS3 e JavaScript ES6+</li>
+      <li>Versionamento com Git & GitHub</li>
+      <li>Responsive Design e SEO</li>
+      <li>DOM, acessibilidade e boas práticas</li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="card">
+      <h3>Projeto 1</h3>
+      <p>Descrição breve do projeto. Tecnologias usadas, objetivo e link (GitHub ou deploy).</p>
+    </div>
+    <div class="card">
+      <h3>Projeto 2</h3>
+      <p>Outro exemplo de projeto com foco em aprendizado ou interface.</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Quer trocar uma ideia ou trabalhar junto? Me chama:</p>
+    <ul>
+      <li><a href="mailto:email@exemplo.com" style="color:#00ffff;">Email</a></li>
+      <li><a href="https://github.com/seuusuario" target="_blank" style="color:#00ffff;">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/seuusuario" target="_blank" style="color:#00ffff;">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
