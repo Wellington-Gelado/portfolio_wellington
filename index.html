@@ -8,6 +8,12 @@
    <link rel="stylesheet" href="style.css">
 
     <script src="js/script.js"></script>
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
 </head>
 <body>
 
@@ -71,6 +77,17 @@
   <footer>
     <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Registro do Service Worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('Service Worker registrado:', reg.scope))
+        .catch(err => console.error('Erro ao registrar SW:', err));
+    });
+  }
+</script>
 
 </body>
 </html>
